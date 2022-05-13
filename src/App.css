@@ -1,27 +1,12 @@
-/* Header styles */
-.header {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  padding: 10px;
-  background-color: lightgreen;
+.wrapper {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 80px calc(100% - 80px);
+  grid-template-rows: 80px 500px;
 }
 
-.header__logo {
-  width: 50px;
-}
-
-
-/* Navbar styles */
-.nav {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-color: lightcoral;
-}
-
-
-/* Profile page style */
-.profile {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: lightsalmon;
+.block {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0 rgba(94,92,154, .06);
 }
