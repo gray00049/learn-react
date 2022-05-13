@@ -1,9 +1,7 @@
-import './Profile.css';
-
 let Profile = () => {
   return (
     <div className="profile">
-      Профиль
+      Личная информация в профиле
     </div>
   )
 }
