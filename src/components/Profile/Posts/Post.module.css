@@ -1,11 +1,13 @@
 .postWrapper {
   width: 100%;
   display: flex;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
 .postSidebar {
   width: 280px;
+  min-width: 280px;
   height: 270px;
   margin-right: 10px;
   line-height: 270px;
@@ -62,4 +64,33 @@
   font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   cursor: pointer
+}
+
+.post {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.username {
+  display: block;
+  color: #c9c9d3;
+  font-size: 16px;
+  line-height: 14px;
 }
