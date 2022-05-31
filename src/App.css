@@ -10,3 +10,9 @@
   border-radius: 10px;
   box-shadow: 0 0 40px 0 rgba(94,92,154, .06);
 }
+
+.main-content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
