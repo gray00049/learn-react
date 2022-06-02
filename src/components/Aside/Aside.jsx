@@ -1,20 +1,23 @@
+import {NavLink} from 'react-router-dom';
 import classes from './Aside.module.css';
 
+
 let Aside = () => {
+  let activeClassName = classes.active;
   return (
     <aside className={classes.aside}>
-      <a href="/" className={classes.item}>
+      <NavLink to="/" className={({ isActive }) => isActive ? `${classes.item} ${classes.active}` : classes.item}>
         <i class="fa-solid fa-desktop"></i>
-      </a>
-      <a href="/profile" className={classes.item}>
+      </NavLink>
+      <NavLink to="/profile" className={({ isActive }) => isActive ? `${classes.item} ${classes.active}` : classes.item}>
         <i class="fa-solid fa-user"></i>
-      </a>
-      <a href="/dialogs" className={classes.item}>
+      </NavLink>
+      <NavLink to="/dialogs" className={({ isActive }) => isActive ? `${classes.item} ${classes.active}` : classes.item}>
         <i class="fa-solid fa-comment"></i>
-      </a>
-      <a href="#" className={classes.item}>
+      </NavLink>
+      <NavLink to="/likes" className={({ isActive }) => isActive ? `${classes.item} ${classes.active}` : classes.item}>
         <i class="fa-solid fa-heart"></i>
-      </a>
+      </NavLink>
     </aside>
   )
 }

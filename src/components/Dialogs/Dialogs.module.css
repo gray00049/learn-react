@@ -1,0 +1,33 @@
+.dialogsWrapper {
+  display: flex;
+}
+
+.dialogs {
+  width: 30%;
+  min-width: 150px;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  padding: 20px 15px 20px 0
+}
+
+.dialog {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 5px 15px 20px;
+}
+
+.dialog:hover {
+  background-color: rgb(229, 229, 229);
+  transition: all .4s;
+}
+
+.userLogo {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.userName {
+  font-size: 16px;
+}

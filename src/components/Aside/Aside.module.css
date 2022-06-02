@@ -22,3 +22,8 @@
   color: #dedeea;
   text-align: center;
 }
+
+.active {
+  color: #676767;
+  transition: all .4s;
+}
